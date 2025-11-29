@@ -1,0 +1,13 @@
+{
+  "name": "Run Tests on Save",
+  "description": "Automatically run tests when Python or TypeScript files are saved",
+  "trigger": {
+    "type": "onFileSave",
+    "filePattern": "**/*.{py,ts,tsx}"
+  },
+  "action": {
+    "type": "sendMessage",
+    "message": "Run tests for the file that was just saved"
+  },
+  "enabled": true
+}

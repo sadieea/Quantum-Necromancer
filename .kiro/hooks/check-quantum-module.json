@@ -1,0 +1,13 @@
+{
+  "name": "Verify Quantum Module",
+  "description": "Check quantum module implementation when modified",
+  "trigger": {
+    "type": "onFileSave",
+    "filePattern": "**/quantum.py"
+  },
+  "action": {
+    "type": "sendMessage",
+    "message": "Verify that the quantum module uses Qiskit correctly and generates proper random numbers"
+  },
+  "enabled": true
+}
